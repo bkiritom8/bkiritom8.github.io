@@ -488,7 +488,7 @@ section {
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
 }
 
@@ -682,6 +682,12 @@ section {
     to {
         opacity: 1;
         transform: translateY(0);
+    }
+}
+
+@media (max-width: 1200px) {
+    .projects-grid {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
