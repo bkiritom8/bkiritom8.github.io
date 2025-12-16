@@ -1,6 +1,6 @@
 # Bhargav Pamidighantam - Portfolio Website
 
-Welcome to my personal portfolio website! 🚀
+Welcome to my personal portfolio website!
 
 ## About
 
@@ -8,12 +8,12 @@ This is my professional portfolio showcasing my work, skills, and projects as a 
 
 ## Features
 
-- 🎨 Modern, responsive design
-- 📱 Mobile-friendly layout
-- ⚡ Smooth animations and transitions
-- 🎯 Interactive project showcase
-- 📬 Contact form
-- 🌐 Cross-browser compatible
+- Modern, responsive design
+- Mobile-friendly layout
+- Smooth animations and transitions
+- Interactive project showcase
+- Contact form
+- Cross-browser compatible
 
 ## Technologies Used
 
@@ -57,4 +57,4 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ---
 
-Made with ❤️ by Bhargav Pamidighantam
+Made by Bhargav Pamidighantam
