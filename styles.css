@@ -263,20 +263,55 @@ section {
 .experience-timeline {
     max-width: 900px;
     margin: 0 auto;
+    position: relative;
+    padding-left: 50px;
+}
+
+.experience-timeline::before {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 0;
+    bottom: 0;
+    width: 3px;
+    background: linear-gradient(180deg, var(--primary-color), var(--secondary-color));
+    border-radius: 3px;
 }
 
 .experience-item {
     background: var(--bg-white);
     padding: 2rem;
     border-radius: 12px;
-    margin-bottom: 2rem;
+    margin-bottom: 3rem;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
+    position: relative;
+    border-left: 4px solid transparent;
+}
+
+.experience-item::before {
+    content: '';
+    position: absolute;
+    left: -47px;
+    top: 2rem;
+    width: 16px;
+    height: 16px;
+    background: var(--bg-white);
+    border: 4px solid var(--primary-color);
+    border-radius: 50%;
+    box-shadow: 0 0 0 4px var(--bg-light);
+    z-index: 1;
 }
 
 .experience-item:hover {
-    transform: translateY(-5px);
+    transform: translateX(10px);
     box-shadow: var(--shadow-lg);
+    border-left-color: var(--primary-color);
+}
+
+.experience-item:hover::before {
+    background: var(--primary-color);
+    transform: scale(1.3);
 }
 
 .experience-header {
@@ -286,17 +321,23 @@ section {
     margin-bottom: 1.5rem;
     flex-wrap: wrap;
     gap: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 2px solid var(--bg-light);
 }
 
 .experience-title h3 {
     font-size: 1.5rem;
     color: var(--text-dark);
     margin-bottom: 0.5rem;
+    font-weight: 700;
 }
 
 .experience-title h4 {
     font-size: 1.2rem;
-    color: var(--primary-color);
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
     font-weight: 600;
 }
 
@@ -305,16 +346,23 @@ section {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
+    background: var(--bg-light);
+    padding: 0.75rem 1.25rem;
+    border-radius: 8px;
+    border-left: 3px solid var(--primary-color);
 }
 
 .experience-date span {
-    color: var(--text-light);
+    color: var(--text-dark);
     font-size: 0.95rem;
+    font-weight: 600;
 }
 
 .experience-date .location {
     font-size: 0.9rem;
     font-style: italic;
+    color: var(--text-light);
+    font-weight: 400;
 }
 
 .experience-description {
@@ -325,17 +373,31 @@ section {
 .experience-description li {
     color: var(--text-light);
     line-height: 1.8;
-    margin-bottom: 0.75rem;
-    padding-left: 1.5rem;
+    margin-bottom: 1rem;
+    padding-left: 2rem;
     position: relative;
+    transition: all 0.3s ease;
 }
 
 .experience-description li::before {
-    content: '▹';
+    content: '';
     position: absolute;
     left: 0;
-    color: var(--primary-color);
-    font-weight: bold;
+    top: 0.6rem;
+    width: 8px;
+    height: 8px;
+    background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+    border-radius: 50%;
+    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.1);
+}
+
+.experience-description li:hover {
+    color: var(--text-dark);
+    padding-left: 2.5rem;
+}
+
+.experience-description li:hover::before {
+    transform: scale(1.5);
 }
 
 .skills {
@@ -618,6 +680,22 @@ section {
         font-size: 2rem;
     }
 
+    .experience-timeline {
+        padding-left: 30px;
+    }
+
+    .experience-timeline::before {
+        left: 10px;
+    }
+
+    .experience-item::before {
+        left: -27px;
+    }
+
+    .experience-item:hover {
+        transform: translateX(5px);
+    }
+
     .experience-header {
         flex-direction: column;
         align-items: flex-start;
@@ -625,6 +703,15 @@ section {
 
     .experience-date {
         text-align: left;
+        width: 100%;
+    }
+
+    .experience-title h3 {
+        font-size: 1.3rem;
+    }
+
+    .experience-title h4 {
+        font-size: 1.1rem;
     }
 
     .projects-grid,
