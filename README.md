@@ -4,7 +4,7 @@ Welcome to my personal portfolio website!
 
 ## About
 
-This is my professional portfolio showcasing my work, skills, and projects as a Full Stack Developer.
+This is my professional portfolio showcasing my work, skills, and projects as a Machine Learning Engineer and Data Scientist.
 
 ## Features
 
