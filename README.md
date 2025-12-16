@@ -27,8 +27,28 @@ This is my professional portfolio showcasing my work, skills, and projects as a 
 - **Hero**: Eye-catching introduction
 - **About**: Professional background and stats
 - **Skills**: Technical expertise and tools
-- **Projects**: Featured work and case studies
+- **Projects**: Featured work and case studies (10 projects)
 - **Contact**: Ways to get in touch
+
+## Featured Projects
+
+### Machine Learning & Deep Learning
+1. **Explainable ML for Alzheimer's Classification** - XGBoost, SHAP, 20K+ features, blood gene expression analysis
+2. **Clinical Text Summarization with T5** - PyTorch, Transformers, 97% compression, ROUGE evaluation
+3. **Movie Review Sentiment Analysis** - Algorithm comparison, 86% accuracy with MLP, TF vs TF-IDF analysis
+4. **Clustering and t-SNE Visualization** - K-means clustering, multiple document representations, confusion matrices
+5. **Information Retrieval Evaluation** - SVD-based retrieval, manual relevance assessment, Precision@10 metrics
+
+### Systems & Databases
+6. **Food Delivery System** - MySQL, Python, Streamlit dashboards, multi-role authentication
+7. **Secure RAG Systems for Defense** - Research synthesis, 45+ papers, MLOps, DoD applications
+
+### Algorithms & Analysis
+8. **SVD Dimensionality Reduction** - Linear algebra, variance analysis, TF/TF-IDF/PPMI comparison
+
+### Software Engineering
+9. **Adventure Game Engine** - Java, OOP, Swing GUI, team project, JSON configuration
+10. **Memory Match Game** - Python, Turtle graphics, event-driven programming, persistent leaderboard
 
 ## Live Site
 
