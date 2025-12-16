@@ -423,6 +423,17 @@ section {
     gap: 0.5rem;
 }
 
+.resume-actions .btn-secondary {
+    background: transparent;
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
+.resume-actions .btn-secondary:hover {
+    background: var(--primary-color);
+    color: white;
+}
+
 .resume-viewer {
     width: 100%;
     background: var(--bg-light);
@@ -498,6 +509,8 @@ section {
     overflow: hidden;
     box-shadow: var(--shadow);
     transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
 }
 
 .project-card:hover {
@@ -524,6 +537,9 @@ section {
 
 .project-content {
     padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
 }
 
 .project-content h3 {
@@ -557,6 +573,7 @@ section {
 .project-links {
     display: flex;
     gap: 1rem;
+    margin-top: auto;
 }
 
 .project-link {
