@@ -794,6 +794,22 @@ body.light-mode .navbar {
     border-bottom: 1px solid var(--border-color);
 }
 
+body.light-mode .nav-links a {
+    color: #000000;
+}
+
+body.light-mode .nav-links a:hover {
+    color: var(--primary-color);
+}
+
+body.light-mode .logo {
+    color: #000000;
+}
+
+body.light-mode .hamburger span {
+    background: #000000;
+}
+
 body.light-mode .hero {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
