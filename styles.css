@@ -790,8 +790,24 @@ body.light-mode {
 }
 
 body.light-mode .navbar {
-    background: rgba(255, 255, 255, 0.98);
+    background: rgba(255, 255, 255, 0.98) !important;
     border-bottom: 1px solid var(--border-color);
+}
+
+body.light-mode .nav-links a {
+    color: #000000 !important;
+}
+
+body.light-mode .nav-links a:hover {
+    color: var(--primary-color) !important;
+}
+
+body.light-mode .logo {
+    color: #000000 !important;
+}
+
+body.light-mode .hamburger span {
+    background: #000000 !important;
 }
 
 body.light-mode .hero {

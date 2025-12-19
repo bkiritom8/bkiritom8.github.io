@@ -10,9 +10,13 @@ document.addEventListener('DOMContentLoaded', () => {
     if (savedTheme === 'light') {
         body.classList.add('light-mode');
         themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+    } else {
+        navbar.style.background = 'rgba(10, 14, 39, 0.98)';
     }
 
-    themeToggle.addEventListener('click', () => {
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
         body.classList.toggle('light-mode');
 
         if (body.classList.contains('light-mode')) {
@@ -24,7 +28,8 @@ document.addEventListener('DOMContentLoaded', () => {
             localStorage.setItem('theme', 'dark');
             navbar.style.background = 'rgba(10, 14, 39, 0.98)';
         }
-    });
+        });
+    }
 
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
@@ -47,13 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     window.addEventListener('scroll', () => {
-        if (window.scrollY > 100) {
-            navbar.style.background = 'rgba(10, 14, 39, 0.98)';
-            navbar.style.backdropFilter = 'blur(10px)';
-        } else {
-            navbar.style.background = 'rgba(10, 14, 39, 0.98)';
-            navbar.style.backdropFilter = 'blur(10px)';
-        }
+        const isLightMode = body.classList.contains('light-mode');
+        const bgColor = isLightMode ? 'rgba(255, 255, 255, 0.98)' : 'rgba(10, 14, 39, 0.98)';
+
+        navbar.style.background = bgColor;
+        navbar.style.backdropFilter = 'blur(10px)';
     });
 
     const observerOptions = {
