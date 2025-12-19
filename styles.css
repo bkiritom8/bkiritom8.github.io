@@ -1,8 +1,6 @@
 :root {
-    --primary-color: #BE5103;
-    --secondary-color: #B7410E;
-    --accent-yellow: #FFCE1B;
-    --accent-teal: #069494;
+    --primary-color: #6366f1;
+    --secondary-color: #8b5cf6;
     --text-dark: #1f2937;
     --text-light: #6b7280;
     --bg-light: #f9fafb;
@@ -113,7 +111,7 @@ body {
     min-height: 100vh;
     display: flex;
     align-items: center;
-    background: linear-gradient(135deg, var(--primary-color) 0%, var(--accent-yellow) 50%, var(--accent-teal) 100%);
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
     padding-top: 80px;
 }
@@ -130,7 +128,7 @@ body {
 }
 
 .highlight {
-    background: linear-gradient(135deg, var(--accent-yellow), var(--bg-white));
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
