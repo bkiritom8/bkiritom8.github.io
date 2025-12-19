@@ -50,10 +50,10 @@ body {
 }
 
 .navbar {
-    background: rgba(10, 14, 39, 0.95);
+    background: rgba(10, 14, 39, 0.98);
     backdrop-filter: blur(10px);
     box-shadow: var(--shadow);
-    border-bottom: 1px solid var(--border-subtle);
+    border-bottom: 1px solid rgba(59, 130, 246, 0.2);
     position: fixed;
     width: 100%;
     top: 0;
@@ -85,7 +85,7 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-secondary);
+    color: var(--text-primary);
     font-weight: 500;
     transition: color 0.3s ease;
     position: relative;
@@ -474,7 +474,7 @@ section {
 
 .resume-viewer {
     width: 100%;
-    background: var(--bg-card);
+    background: #1a1a1a;
     border-radius: 12px;
     overflow: hidden;
     box-shadow: var(--shadow-lg);
@@ -486,6 +486,7 @@ section {
     height: 800px;
     border: none;
     display: block;
+    filter: invert(0.9) hue-rotate(180deg);
 }
 
 .skills {
