@@ -26,11 +26,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > 100) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+            navbar.style.background = 'rgba(10, 14, 39, 0.98)';
             navbar.style.backdropFilter = 'blur(10px)';
         } else {
-            navbar.style.background = '#ffffff';
-            navbar.style.backdropFilter = 'none';
+            navbar.style.background = 'rgba(10, 14, 39, 0.98)';
+            navbar.style.backdropFilter = 'blur(10px)';
         }
     });
 
