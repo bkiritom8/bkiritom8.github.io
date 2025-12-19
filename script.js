@@ -3,6 +3,28 @@ document.addEventListener('DOMContentLoaded', () => {
     const navLinks = document.querySelector('.nav-links');
     const navbar = document.querySelector('.navbar');
     const contactForm = document.querySelector('.contact-form');
+    const themeToggle = document.getElementById('theme-toggle');
+    const body = document.body;
+
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'light') {
+        body.classList.add('light-mode');
+        themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+    }
+
+    themeToggle.addEventListener('click', () => {
+        body.classList.toggle('light-mode');
+
+        if (body.classList.contains('light-mode')) {
+            themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            localStorage.setItem('theme', 'light');
+            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+        } else {
+            themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            localStorage.setItem('theme', 'dark');
+            navbar.style.background = 'rgba(10, 14, 39, 0.98)';
+        }
+    });
 
     hamburger.addEventListener('click', () => {
         navLinks.classList.toggle('active');
@@ -26,11 +48,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     window.addEventListener('scroll', () => {
         if (window.scrollY > 100) {
-            navbar.style.background = 'rgba(255, 255, 255, 0.98)';
+            navbar.style.background = 'rgba(10, 14, 39, 0.98)';
             navbar.style.backdropFilter = 'blur(10px)';
         } else {
-            navbar.style.background = '#ffffff';
-            navbar.style.backdropFilter = 'none';
+            navbar.style.background = 'rgba(10, 14, 39, 0.98)';
+            navbar.style.backdropFilter = 'blur(10px)';
         }
     });
 
