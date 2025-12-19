@@ -120,7 +120,7 @@ body {
 .hamburger span {
     width: 25px;
     height: 3px;
-    background: var(--text-dark);
+    background: var(--text-primary);
     border-radius: 3px;
     transition: all 0.3s ease;
 }
@@ -255,7 +255,7 @@ section {
 
 .about-text p {
     font-size: 1.1rem;
-    color: var(--text-light);
+    color: var(--text-secondary);
     margin-bottom: 1.5rem;
     line-height: 1.8;
 }
@@ -334,10 +334,10 @@ section {
     top: 2rem;
     width: 16px;
     height: 16px;
-    background: var(--bg-white);
+    background: var(--bg-elevated);
     border: 4px solid var(--primary-color);
     border-radius: 50%;
-    box-shadow: 0 0 0 4px var(--bg-light);
+    box-shadow: 0 0 0 4px rgba(59, 130, 246, 0.2);
     z-index: 1;
 }
 
@@ -360,7 +360,7 @@ section {
     flex-wrap: wrap;
     gap: 1rem;
     padding-bottom: 1rem;
-    border-bottom: 2px solid var(--bg-light);
+    border-bottom: 2px solid var(--border-subtle);
 }
 
 .experience-title h3 {
@@ -384,7 +384,7 @@ section {
     display: flex;
     flex-direction: column;
     gap: 0.25rem;
-    background: var(--bg-light);
+    background: rgba(59, 130, 246, 0.1);
     padding: 0.75rem 1.25rem;
     border-radius: 8px;
     border-left: 3px solid var(--primary-color);
@@ -399,7 +399,7 @@ section {
 .experience-date .location {
     font-size: 0.9rem;
     font-style: italic;
-    color: var(--text-light);
+    color: var(--text-dim);
     font-weight: 400;
 }
 
