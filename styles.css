@@ -742,15 +742,15 @@ section {
     position: fixed;
     bottom: 2rem;
     right: 2rem;
-    width: 3.5rem;
-    height: 3.5rem;
+    width: 3rem;
+    height: 3rem;
     border-radius: 50%;
-    background: var(--primary-color);
-    border: none;
-    color: white;
-    font-size: 1.5rem;
+    background: transparent;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    font-size: 1.2rem;
     cursor: pointer;
-    box-shadow: var(--shadow-lg);
+    box-shadow: none;
     transition: all 0.3s ease;
     z-index: 999;
     display: flex;
@@ -759,8 +759,9 @@ section {
 }
 
 .theme-toggle:hover {
-    transform: scale(1.1) rotate(20deg);
-    box-shadow: 0 0 25px rgba(59, 130, 246, 0.5);
+    transform: scale(1.1);
+    background: rgba(59, 130, 246, 0.1);
+    box-shadow: 0 0 15px rgba(59, 130, 246, 0.3);
 }
 
 .theme-toggle:active {
@@ -891,6 +892,14 @@ body.light-mode .contact-method {
 
     .section-title {
         font-size: 2rem;
+    }
+
+    .theme-toggle {
+        width: 2.5rem;
+        height: 2.5rem;
+        font-size: 1rem;
+        bottom: 1.5rem;
+        right: 1.5rem;
     }
 
     .experience-timeline {
