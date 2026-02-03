@@ -631,6 +631,57 @@ section {
     color: var(--secondary-color);
 }
 
+/* Featured Project Card */
+.project-card.featured {
+    grid-column: span 2;
+    border: 2px solid var(--primary-color);
+    box-shadow: var(--shadow-glow);
+}
+
+.project-card.featured .project-image {
+    background: linear-gradient(135deg, #dc2626, #991b1b);
+}
+
+.project-card.featured h3 {
+    font-size: 1.75rem;
+}
+
+/* Project Status Badge */
+.project-status {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    padding: 0.375rem 0.875rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.project-status.in-progress {
+    background: rgba(234, 179, 8, 0.9);
+    color: #1a1a1a;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        box-shadow: 0 0 0 0 rgba(234, 179, 8, 0.4);
+    }
+    50% {
+        box-shadow: 0 0 0 8px rgba(234, 179, 8, 0);
+    }
+}
+
+/* Project Date */
+.project-date {
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 0.75rem !important;
+}
+
 .contact {
     background: var(--bg-elevated);
 }
@@ -953,6 +1004,14 @@ body.light-mode .contact-method {
     .projects-grid,
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-card.featured {
+        grid-column: span 1;
+    }
+
+    .project-card.featured h3 {
+        font-size: 1.5rem;
     }
 
     .contact-content {
