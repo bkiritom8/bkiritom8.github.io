@@ -493,6 +493,15 @@ section {
     background: var(--bg-elevated);
 }
 
+.skills-disclaimer,
+.projects-disclaimer {
+    text-align: center;
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+    font-style: italic;
+}
+
 .skills-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -680,6 +689,58 @@ section {
     color: var(--primary-color);
     font-weight: 600;
     margin-bottom: 0.75rem !important;
+}
+
+/* Academic Status Badge */
+.project-status.academic {
+    background: rgba(59, 130, 246, 0.9);
+    color: white;
+}
+
+/* Current Technical Focus Section */
+.focus {
+    background: var(--bg-elevated);
+}
+
+.focus-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.focus-item {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: center;
+    border: 1px solid var(--border-subtle);
+    transition: all 0.3s ease;
+}
+
+.focus-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-glow);
+    border-color: var(--primary-color);
+}
+
+.focus-item i {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.focus-item h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0.75rem;
+    color: var(--text-primary);
+}
+
+.focus-item p {
+    color: var(--text-secondary);
+    font-size: 0.95rem;
+    line-height: 1.6;
 }
 
 .contact {
