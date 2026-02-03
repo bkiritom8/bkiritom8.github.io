@@ -697,6 +697,12 @@ section {
     color: white;
 }
 
+/* Personal Project Badge */
+.project-status.personal {
+    background: rgba(16, 185, 129, 0.9);
+    color: white;
+}
+
 /* Current Technical Focus Section */
 .focus {
     background: var(--bg-elevated);
