@@ -1,4 +1,12 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Cache-bust PDF links to always load latest resume
+    const cacheBuster = Date.now();
+    document.querySelectorAll('a[href$=".pdf"], iframe[src$=".pdf"]').forEach(el => {
+        const attr = el.hasAttribute('href') ? 'href' : 'src';
+        const url = el.getAttribute(attr);
+        el.setAttribute(attr, url + '?v=' + cacheBuster);
+    });
+
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     const navbar = document.querySelector('.navbar');
