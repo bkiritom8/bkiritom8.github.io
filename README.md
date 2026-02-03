@@ -24,7 +24,7 @@ MS in Computer Science at Northeastern University (May 2026). Former Data Operat
 ## Featured Projects
 
 ### In Progress
-- **F1 Race Strategy Optimizer** (Team Project, MLOps Expo Apr 2026) - Data ingestion, driver profile extraction, XGBoost models. GCP deployment planned.
+- **F1 Race Strategy Optimizer** (Team Project, MLOps Expo Apr 2026) - Team lead. Responsible for data pipelining, data processing, GCP deployment infrastructure.
 
 ### ML Systems (Academic)
 - **Cross-Platform PyTorch Training Framework** - Device management (CUDA/MPS/CPU), checkpointing, early stopping, CNN/ResNet training
