@@ -6,7 +6,7 @@ Personal portfolio website for an MS Computer Science student focused on ML syst
 
 MS in Computer Science at Northeastern University (May 2026). Former Data Operations Analyst at Apple focused on annotation QC and model error analysis. Building toward ML systems engineering with emphasis on training performance, evaluation pipelines, and infrastructure fundamentals.
 
-**Background:** B.Stat from Indian Statistical Institute, Kolkata
+**Background:** PG Diploma in Applied Statistics from Indian Statistical Institute | BBA from ICFAI Business School
 
 ## Live Site
 
