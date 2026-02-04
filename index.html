@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bhargav Pamidighantam - ML Systems & Data Engineer Portfolio">
+    <meta name="theme-color" content="#000000">
     <title>Bhargav Pamidighantam - Portfolio</title>
     <link rel="icon" type="image/svg+xml" href="favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
@@ -20,10 +20,9 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#experience">Experience</a></li>
-                <li><a href="#resume">Resume</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="#focus">Focus</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="hamburger">
@@ -38,13 +37,14 @@
         <canvas id="distributed-nn-canvas"></canvas>
         <div class="container">
             <div class="hero-content">
-                <h1 class="hero-title">Hi, I'm <span class="highlight">Bhargav Pamidighantam</span></h1>
-                <p class="hero-subtitle">ML Systems & Data Engineer (Student)</p>
-                <p class="hero-description">MS in Computer Science at Northeastern University (May 2026). Focused on ML training systems, model evaluation, and data infrastructure. Building toward performance engineering and scalable ML systems.</p>
+                <p class="hero-eyebrow">MS Computer Science at Northeastern</p>
+                <h1 class="hero-title">Bhargav Pamidighantam</h1>
+                <p class="hero-subtitle">ML Systems & Data Engineer</p>
+                <p class="hero-description">Building scalable ML infrastructure and data pipelines. Former Apple Data Operations Analyst with experience in large-scale model evaluation and annotation quality systems.</p>
                 <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View My Work</a>
-                    <a href="BhargavPamidighantam.pdf" class="btn btn-secondary" target="_blank">View Resume</a>
-                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="BhargavPamidighantam.pdf" class="btn btn-secondary" target="_blank">Resume</a>
+                    <a href="#contact" class="btn btn-secondary">Contact</a>
                 </div>
             </div>
         </div>
@@ -52,24 +52,25 @@
 
     <section id="about" class="about">
         <div class="container">
-            <h2 class="section-title">About Me</h2>
             <div class="about-content">
                 <div class="about-text">
-                    <p>I'm an MS in Computer Science student at Northeastern University, graduating May 2026, with coursework in machine learning, deep learning, and distributed systems. At Apple, I worked as a Data Operations Analyst focused on large-scale data annotation quality control and model error analysis for multilingual NLU systems.</p>
-                    <p>My background includes a Postgraduate Diploma in Applied Statistics from ISI and hands-on experience in Python, PyTorch, and data evaluation at scale. I'm building toward ML systems engineering with focus on training performance, evaluation pipelines, and infrastructure fundamentals.</p>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>MS CS</h3>
-                            <p>Northeastern (2026)</p>
-                        </div>
-                        <div class="stat">
-                            <h3>Apple Data Ops</h3>
-                            <p>1 YoE</p>
-                        </div>
-                        <div class="stat">
-                            <h3>PG Diploma</h3>
-                            <p>ISI Applied Stats</p>
-                        </div>
+                    <span class="section-label">About</span>
+                    <h2 class="section-title">Background</h2>
+                    <p>MS in Computer Science student at Northeastern University, focusing on machine learning and distributed systems. At Apple, I worked on large-scale data annotation and quality control for speech, vision, and multimodal ML models supporting Siri workloads.</p>
+                    <p>My background combines statistical foundations from ISI with hands-on ML engineering. I focus on training performance, data pipelines, and evaluation systems at scale.</p>
+                </div>
+                <div class="about-stats">
+                    <div class="stat">
+                        <h3>MS CS</h3>
+                        <p>Northeastern University, 2026</p>
+                    </div>
+                    <div class="stat">
+                        <h3>Apple</h3>
+                        <p>AI/ML Data Operations, 1 Year</p>
+                    </div>
+                    <div class="stat">
+                        <h3>ISI</h3>
+                        <p>PG Diploma, Applied Statistics</p>
                     </div>
                 </div>
             </div>
@@ -78,7 +79,10 @@
 
     <section id="experience" class="experience">
         <div class="container">
-            <h2 class="section-title">Work Experience</h2>
+            <div class="section-header">
+                <span class="section-label">Experience</span>
+                <h2 class="section-title">Work History</h2>
+            </div>
             <div class="experience-timeline">
                 <div class="experience-item">
                     <div class="experience-header">
@@ -87,14 +91,15 @@
                             <h4>Apple</h4>
                         </div>
                         <div class="experience-date">
-                            <span>Mar 2023 – Mar 2024</span>
+                            <span>Mar 2023 - Mar 2024</span>
                             <span class="location">Hyderabad, India</span>
                         </div>
                     </div>
                     <ul class="experience-description">
-                        <li>Performed quality control and error analysis on multilingual NLU evaluation datasets spanning 700K+ voice and text prompts, documenting cross-dialect failure patterns for ML engineering teams.</li>
-                        <li>Applied domain expertise in Singaporean English to improve annotation guidelines and flag systematic model errors, contributing to data quality improvements used in subsequent model iterations.</li>
-                        <li>Supported ML engineers by triaging annotation inconsistencies and maintaining evaluation dataset integrity across multiple language variants.</li>
+                        <li>Performed large-scale data annotation, transcription, and quality control for speech, vision, and multimodal ML models supporting Siri-related workloads.</li>
+                        <li>Reviewed and evaluated 700K+ audio, text, and image samples, identifying labeling errors, ambiguity, and systematic failure patterns in model outputs.</li>
+                        <li>Conducted qualitative analysis of LLM and ASR outputs across multiple English dialects, documenting error categories and edge cases for downstream model iteration.</li>
+                        <li>Worked with annotation guidelines, QA protocols, and escalation workflows to maintain consistency and reliability across high-volume ML data pipelines.</li>
                     </ul>
                 </div>
 
@@ -105,33 +110,76 @@
                             <h4>SSP 2000 Inc.</h4>
                         </div>
                         <div class="experience-date">
-                            <span>May 2021 – Jul 2021</span>
+                            <span>May 2021 - Jul 2021</span>
                             <span class="location">Hyderabad, India</span>
                         </div>
                     </div>
                     <ul class="experience-description">
-                        <li>Built a digital inventory tracking system for R&D operations, improving asset traceability and reducing manual errors.</li>
-                        <li>Utilized Python for the backend APIs and PostgreSQL for the database.</li>
+                        <li>Built an internal inventory tracking system using Python and PostgreSQL to replace manual asset logging workflows.</li>
+                        <li>Designed relational database schema and implemented REST-style endpoints to support CRUD operations for operational data.</li>
+                        <li>Focused on correctness, maintainability, and documentation rather than production-scale deployment.</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="resume" class="resume-section">
+    <section id="education" class="education">
         <div class="container">
-            <h2 class="section-title">Resume</h2>
-            <div class="resume-container">
-                <div class="resume-actions">
-                    <a href="BhargavPamidighantam.pdf" class="btn btn-primary" target="_blank">
-                        <i class="fas fa-external-link-alt"></i> Open in New Tab
-                    </a>
-                    <a href="BhargavPamidighantam.pdf" class="btn btn-secondary" download>
-                        <i class="fas fa-download"></i> Download PDF
-                    </a>
+            <div class="section-header">
+                <span class="section-label">Education</span>
+                <h2 class="section-title">Academic Background</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card">
+                    <p class="degree">M.S. in Computer Science</p>
+                    <p class="school">Northeastern University</p>
+                    <p class="details">Machine Learning, Distributed Systems<br>GPA: 3.7/4.0</p>
+                    <p class="date">Sep 2024 - May 2026</p>
                 </div>
-                <div class="resume-viewer">
-                    <iframe src="BhargavPamidighantam.pdf" type="application/pdf"></iframe>
+                <div class="education-card">
+                    <p class="degree">PG Diploma in Applied Statistics</p>
+                    <p class="school">Indian Statistical Institute</p>
+                    <p class="details">Statistical Methods for Machine Learning</p>
+                    <p class="date">Oct 2022 - Oct 2023</p>
+                </div>
+                <div class="education-card">
+                    <p class="degree">Bachelor of Business Administration</p>
+                    <p class="school">ICFAI Business School</p>
+                    <p class="details">Business Fundamentals & Analytics</p>
+                    <p class="date">Aug 2019 - May 2022</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="certifications">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-label">Certifications</span>
+                <h2 class="section-title">Professional Credentials</h2>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning Specialization</h3>
+                    <p>Stanford University</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Data Analytics</h3>
+                    <p>Google</p>
+                </div>
+                <div class="cert-card">
+                    <div class="cert-icon">
+                        <i class="fas fa-tasks"></i>
+                    </div>
+                    <h3>Project Management</h3>
+                    <p>Google</p>
                 </div>
             </div>
         </div>
@@ -139,38 +187,40 @@
 
     <section id="skills" class="skills">
         <div class="container">
-            <h2 class="section-title">Skills & Technologies</h2>
-            <p class="skills-disclaimer">Categorized by proficiency: Core (strong), Academic/Project (coursework + projects), Exposure (learning)</p>
+            <div class="section-header">
+                <span class="section-label">Skills</span>
+                <h2 class="section-title">Technical Expertise</h2>
+            </div>
             <div class="skills-grid">
                 <div class="skill-card">
-                    <i class="fab fa-python"></i>
-                    <h3>Core (Strong)</h3>
-                    <p>Python, PyTorch, Pandas, NumPy, Scikit-learn, Git, Linux</p>
+                    <i class="fas fa-code"></i>
+                    <h3>Programming</h3>
+                    <p>Python, Java, SQL, R, Go, HTML</p>
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-brain"></i>
-                    <h3>ML Systems (Academic)</h3>
-                    <p>Training loops, checkpointing, device management, data loading</p>
+                    <h3>ML & Data</h3>
+                    <p>PyTorch, TensorFlow, Scikit-learn, Hugging Face (BERT, T5), XGBoost, SHAP</p>
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-chart-bar"></i>
-                    <h3>Data & Evaluation</h3>
-                    <p>Data QC, error analysis, annotation pipelines, statistical modeling</p>
+                    <h3>Visualization</h3>
+                    <p>Matplotlib, Seaborn, Tableau</p>
                 </div>
                 <div class="skill-card">
-                    <i class="fas fa-cloud"></i>
-                    <h3>Infrastructure (Exposure)</h3>
-                    <p>AWS, Docker, GCP basics, CI/CD, Terraform</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-microchip"></i>
-                    <h3>Deep Learning (Academic)</h3>
-                    <p>CNNs, Transformers, NLP, Hugging Face</p>
+                    <i class="fas fa-server"></i>
+                    <h3>Infrastructure</h3>
+                    <p>Docker, Kubernetes, Git, CI/CD (GitHub Actions), AWS (EC2, S3), Terraform, Airflow</p>
                 </div>
                 <div class="skill-card">
                     <i class="fas fa-database"></i>
                     <h3>Databases</h3>
-                    <p>PostgreSQL, MySQL, MongoDB, SQL</p>
+                    <p>PostgreSQL, MySQL, MongoDB</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-cogs"></i>
+                    <h3>ML Workflows</h3>
+                    <p>Data pipelines, model evaluation, experiment tracking, hyperparameter tuning</p>
                 </div>
             </div>
         </div>
@@ -178,30 +228,32 @@
 
     <section id="projects" class="projects">
         <div class="container">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="projects-disclaimer">Projects include academic coursework, exploratory work, and in-progress implementations. Status labels indicate current verified state.</p>
+            <div class="section-header">
+                <span class="section-label">Projects</span>
+                <h2 class="section-title">Featured Work</h2>
+                <p class="section-subtitle">A selection of projects spanning ML systems, data engineering, and applied research.</p>
+            </div>
             <div class="projects-grid">
                 <div class="project-card featured">
                     <div class="project-image">
                         <div class="placeholder-image">
                             <i class="fas fa-flag-checkered"></i>
                         </div>
-                        <span class="project-status in-progress">Team Project - In Progress</span>
+                        <span class="project-status in-progress">In Progress</span>
                     </div>
                     <div class="project-content">
                         <h3>F1 Race Strategy Optimizer</h3>
-                        <p class="project-date">Team Project — MLOps Expo, Apr 2026</p>
-                        <p><strong>Current Work:</strong> Data ingestion pipeline for historical F1 race data (Ergast API), initial driver profile feature extraction, and baseline XGBoost models for tire degradation prediction.</p>
-                        <p><strong>Planned Scope:</strong> Monte Carlo pit strategy simulation, real-time inference API (FastAPI), GCP deployment with BigQuery and Dataflow streaming.</p>
-                        <p><strong>My Ownership:</strong> Data pipelining, data processing, GCP deployment infrastructure, team lead.</p>
+                        <p class="project-date">Team Project - MLOps Expo, Apr 2026</p>
+                        <p>Leading data infrastructure for collaborative MLOps project. Building data ingestion from Ergast API, driver profile feature extraction, and baseline XGBoost models for tire degradation prediction. Architecting GCP deployment with BigQuery and Dataflow streaming; implementing Monte Carlo pit strategy simulation and real-time inference API with FastAPI.</p>
                         <div class="project-tags">
                             <span class="tag">Python</span>
                             <span class="tag">XGBoost</span>
                             <span class="tag">BigQuery</span>
-                            <span class="tag">Team Project</span>
+                            <span class="tag">FastAPI</span>
+                            <span class="tag">GCP</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/bkiritom8/F1-Strategy-Optimizer" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://github.com/bkiritom8/F1-Strategy-Optimizer" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -211,19 +263,18 @@
                         <div class="placeholder-image">
                             <i class="fas fa-microchip"></i>
                         </div>
-                        <span class="project-status personal">Personal Project</span>
+                        <span class="project-status personal">Personal</span>
                     </div>
                     <div class="project-content">
                         <h3>Cross-Platform PyTorch Training Framework</h3>
-                        <p>Deep learning training framework implementing device management across CUDA, MPS, and CPU backends. Features automatic device detection with fallback hierarchy, checkpoint saving/loading, early stopping callbacks, and configurable logging. Trained CNN and ResNet architectures on CIFAR-10 for validation. Includes setup scripts for environment configuration.</p>
+                        <p>Deep learning training framework with automatic device detection across CUDA, MPS, and CPU backends. Includes checkpoint saving/loading and early stopping callbacks. Validated on CNN and ResNet architectures (CIFAR-10) with configurable logging and environment setup scripts.</p>
                         <div class="project-tags">
                             <span class="tag">PyTorch</span>
-                            <span class="tag">Training Loops</span>
-                            <span class="tag">Checkpointing</span>
-                            <span class="tag">Device Management</span>
+                            <span class="tag">CUDA</span>
+                            <span class="tag">MPS</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/bkiritom8/Cross-Platform-PyTorch-Training-Framework" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://github.com/bkiritom8/Cross-Platform-PyTorch-Training-Framework" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -231,43 +282,20 @@
                 <div class="project-card">
                     <div class="project-image">
                         <div class="placeholder-image">
-                            <i class="fas fa-cogs"></i>
+                            <i class="fas fa-dna"></i>
                         </div>
-                        <span class="project-status personal">Personal Project</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>ML Pipeline Automation with GitHub Actions</h3>
-                        <p>CI/CD pipeline for ML workflows using GitHub Actions. Implements automated testing on push, Docker containerization for reproducibility, and model artifact versioning. Personal project exploring MLOps fundamentals including workflow orchestration and container-based deployment patterns.</p>
-                        <div class="project-tags">
-                            <span class="tag">GitHub Actions</span>
-                            <span class="tag">Docker</span>
-                            <span class="tag">CI/CD</span>
-                            <span class="tag">MLOps</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/bkiritom8/mlops-github-actions" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image">
-                            <i class="fas fa-brain"></i>
-                        </div>
-                        <span class="project-status academic">Academic Project</span>
+                        <span class="project-status academic">Academic</span>
                     </div>
                     <div class="project-content">
                         <h3>Explainable ML for Alzheimer's Classification</h3>
-                        <p>Multiclass classification on blood gene expression data (20K+ features) to predict Alzheimer's stages. Implemented feature selection pipelines, hyperparameter tuning with cross-validation, and SHAP-based feature importance analysis. Course project exploring model interpretability.</p>
+                        <p>Multiclass classification on blood gene expression data (20K+ features) to predict Alzheimer's stages with feature selection, hyperparameter tuning, and SHAP-based interpretability analysis.</p>
                         <div class="project-tags">
-                            <span class="tag">Python</span>
                             <span class="tag">XGBoost</span>
                             <span class="tag">SHAP</span>
                             <span class="tag">Scikit-learn</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/bkiritom8/ML-Course-Project" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://github.com/bkiritom8/ML-Course-Project" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
                 </div>
@@ -277,155 +305,46 @@
                         <div class="placeholder-image">
                             <i class="fas fa-file-medical"></i>
                         </div>
-                        <span class="project-status academic">Academic Project</span>
+                        <span class="project-status academic">Academic</span>
                     </div>
                     <div class="project-content">
                         <h3>Clinical Text Summarization with T5</h3>
-                        <p>Fine-tuned T5 model on medical note summarization dataset using PyTorch and Hugging Face Transformers. Implemented data preprocessing pipeline, training loop with gradient accumulation for memory efficiency, and evaluation using ROUGE metrics. Course project exploring transformer fine-tuning workflows.</p>
+                        <p>Fine-tuned T5 model on 3,700+ medical notes using PyTorch and Hugging Face. Implemented gradient accumulation for memory efficiency and ROUGE metrics evaluation.</p>
                         <div class="project-tags">
+                            <span class="tag">T5</span>
+                            <span class="tag">Hugging Face</span>
                             <span class="tag">PyTorch</span>
-                            <span class="tag">Transformers</span>
-                            <span class="tag">NLP</span>
-                            <span class="tag">Fine-tuning</span>
                         </div>
                         <div class="project-links">
-                            <a href="https://github.com/bkiritom8/Clinical-text-summarization" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+                            <a href="https://github.com/bkiritom8/Clinical-text-summarization" class="project-link" target="_blank"><i class="fab fa-github"></i> View on GitHub</a>
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image">
-                            <i class="fas fa-chart-line"></i>
-                        </div>
-                        <span class="project-status academic">Academic Project</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Sentiment Classification Benchmark</h3>
-                        <p>Comparative analysis of Naive Bayes, Logistic Regression, and MLP classifiers on movie review sentiment. Explored TF vs TF-IDF feature representations and vocabulary size trade-offs. Course assignment exploring classical ML vs neural approaches.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Scikit-learn</span>
-                            <span class="tag">NLP</span>
-                            <span class="tag">Classification</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/bkiritom8" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <span class="project-status academic">Research Project</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>RAG Systems Literature Review</h3>
-                        <p>Research synthesis analyzing papers on RAG architectures and security considerations for sensitive deployments. Explored architectural patterns for embedding pipelines, retrieval mechanisms, and security considerations. Academic research project.</p>
-                        <div class="project-tags">
-                            <span class="tag">RAG</span>
-                            <span class="tag">LLMs</span>
-                            <span class="tag">Research</span>
-                            <span class="tag">Security</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/bkiritom8/ai-log-analytics" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <span class="project-status academic">Course Assignment</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>SVD & Document Representations</h3>
-                        <p>Applied SVD to term-document matrices with TF, TF-IDF, and PPMI weighting. Analyzed variance explained across components and compared representation quality. NLP course assignment exploring dimensionality reduction.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">NumPy</span>
-                            <span class="tag">Linear Algebra</span>
-                            <span class="tag">NLP</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/bkiritom8" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image">
-                            <i class="fas fa-project-diagram"></i>
-                        </div>
-                        <span class="project-status academic">Course Assignment</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Clustering & t-SNE Analysis</h3>
-                        <p>K-means clustering on document embeddings with t-SNE visualization. Compared SVD-based and CBOW representations using ARI, NMI, and Silhouette metrics. Course assignment on unsupervised learning evaluation.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">Scikit-learn</span>
-                            <span class="tag">t-SNE</span>
-                            <span class="tag">Clustering</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/bkiritom8" class="project-link"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <div class="placeholder-image">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <span class="project-status academic">Course Project</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Food Delivery Database System</h3>
-                        <p>Database course project implementing food delivery platform schema with MySQL. Built Python backend APIs and Streamlit dashboard for multi-role access. Focus on relational design, triggers, and transactions.</p>
-                        <div class="project-tags">
-                            <span class="tag">Python</span>
-                            <span class="tag">MySQL</span>
-                            <span class="tag">Streamlit</span>
-                            <span class="tag">Database Design</span>
-                        </div>
-                        <div class="project-links">
-                            <a href="https://github.com/mohammedarmaan/project" class="project-link" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-                        </div>
-                    </div>
-                </div>
-
             </div>
         </div>
     </section>
 
     <section id="focus" class="focus">
         <div class="container">
-            <h2 class="section-title">Current Technical Focus</h2>
+            <div class="section-header">
+                <span class="section-label">Focus</span>
+                <h2 class="section-title">Current Interests</h2>
+            </div>
             <div class="focus-grid">
                 <div class="focus-item">
                     <i class="fas fa-tachometer-alt"></i>
                     <h3>ML Training Performance</h3>
-                    <p>Understanding training loop optimization, memory management, and efficient data loading patterns in PyTorch</p>
+                    <p>Training loop optimization, memory management, and efficient data loading patterns in PyTorch</p>
                 </div>
                 <div class="focus-item">
                     <i class="fas fa-network-wired"></i>
-                    <h3>Distributed Training Fundamentals</h3>
-                    <p>Learning data parallelism concepts, gradient synchronization, and multi-GPU training patterns</p>
+                    <h3>Distributed Training</h3>
+                    <p>Data parallelism, gradient synchronization, and multi-GPU training patterns</p>
                 </div>
                 <div class="focus-item">
                     <i class="fas fa-chart-area"></i>
-                    <h3>Profiling & Bottleneck Analysis</h3>
-                    <p>Exploring PyTorch profiler, understanding compute vs memory bottlenecks, and basic performance debugging</p>
+                    <h3>Profiling & Analysis</h3>
+                    <p>PyTorch profiler, compute vs memory bottlenecks, and performance debugging</p>
                 </div>
             </div>
         </div>
@@ -433,10 +352,11 @@
 
     <section id="contact" class="contact">
         <div class="container">
-            <h2 class="section-title">Get In Touch</h2>
             <div class="contact-content">
                 <div class="contact-info">
-                    <p class="contact-text">Open to ML systems, model evaluation, performance engineering, and infrastructure-adjacent roles. Interested in teams working on training optimization, data pipelines, and scalable ML infrastructure.</p>
+                    <span class="section-label">Contact</span>
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="contact-text">Open to ML systems, model evaluation, performance engineering, and infrastructure roles. Interested in teams working on training optimization, data pipelines, and scalable ML infrastructure.</p>
                     <div class="contact-methods">
                         <a href="mailto:bhargavsp01@gmail.com" class="contact-method">
                             <i class="fas fa-envelope"></i>
@@ -458,13 +378,13 @@
                 </div>
                 <form class="contact-form">
                     <div class="form-group">
-                        <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        <input type="text" id="name" name="name" placeholder="Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        <input type="email" id="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+                        <textarea id="message" name="message" rows="5" placeholder="Message" required></textarea>
                     </div>
                     <button type="submit" class="btn btn-primary">Send Message</button>
                 </form>
@@ -474,10 +394,10 @@
 
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Bhargav Pamidighantam. All rights reserved.</p>
+            <p>Bhargav Pamidighantam. Boston, MA.</p>
             <div class="social-links">
-                <a href="https://github.com/bkiritom8" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="https://linkedin.com/in/bhargavpam" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/bkiritom8" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://linkedin.com/in/bhargavpam" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
             </div>
         </div>
     </footer>
