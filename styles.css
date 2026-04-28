@@ -785,6 +785,11 @@ section {
     color: #000;
 }
 
+.project-status.complete {
+    background: rgba(191, 90, 242, 0.9);
+    color: white;
+}
+
 .project-content {
     padding: 24px;
     display: flex;
