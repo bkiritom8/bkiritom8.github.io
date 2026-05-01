@@ -12,6 +12,18 @@
 </head>
 <body>
 
+<!-- Loader -->
+<div id="loader">
+  <div class="loader-inner">
+    <div class="loader-logo">BP</div>
+    <div class="loader-bar"><div class="loader-bar-fill"></div></div>
+  </div>
+</div>
+
+<!-- Custom cursor -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
 <canvas id="bg-canvas"></canvas>
 
 <nav id="navbar">
@@ -40,10 +52,13 @@
 </nav>
 
 <section id="hero">
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
   <div class="hero-content">
     <p class="hero-eyebrow">MS Computer Science · Northeastern University</p>
     <h1 class="hero-name">Bhargav<br><span class="gradient-text">Pamidighantam</span></h1>
-    <p class="hero-role">ML Systems &amp; Data Engineer</p>
+    <p class="hero-role"><span class="hero-role-text" id="hero-role-text"></span><span class="hero-cursor"></span></p>
     <p class="hero-desc">Building scalable ML infrastructure and data pipelines.<br>Former Apple AI/ML Data Operations Analyst.</p>
     <div class="hero-cta">
       <a href="#projects" class="btn-primary">View Projects</a>
